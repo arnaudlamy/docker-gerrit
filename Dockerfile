@@ -1,10 +1,10 @@
 # gerrit
 #
-# VERSION               0.0.2
+# VERSION               0.0.3
 
-FROM ubuntu:14.04
+FROM ubuntu:14.10
 
-MAINTAINER Jason W. Edgecombe <jason@rampaginggek.com>
+MAINTAINER <niknyby@riseup.net>
 
 ENV GERRIT_HOME /home/gerrit
 ENV GERRIT_ROOT /home/gerrit/gerrit
