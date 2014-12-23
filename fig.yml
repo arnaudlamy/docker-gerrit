@@ -1,0 +1,12 @@
+db:
+  image: postgres
+gerrit:
+  build: .
+  command: /usr/sbin/service supervisor start
+  volumes:
+    - /home/gerrit/:/backup
+  ports:
+    - "8000:8000"
+    - "29418:29418"
+  links:
+    - db

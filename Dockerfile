@@ -39,4 +39,4 @@ ADD gerrit.config /home/gerrit/gerrit/etc/gerrit.config
 
 USER root
 EXPOSE 8080 29418
-CMD ["/usr/sbin/service","supervisor","start"]
+#CMD ["/usr/sbin/service","supervisor","start"]
