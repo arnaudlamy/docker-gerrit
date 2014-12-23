@@ -4,9 +4,11 @@ gerrit:
   build: .
   command: /usr/sbin/service supervisor start
   volumes:
-    - /home/gerrit/:/backup
+    - backup:/backup
+    - log/supervisor:/var/log/supervisor
+    - log/gerrit:/home/gerrit/gerrit/logs
   ports:
-    - "8000:8000"
+    - "8080:8080"
     - "29418:29418"
   links:
     - db
