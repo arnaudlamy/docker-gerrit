@@ -4,7 +4,7 @@ gerrit:
   build: .
   command: /usr/sbin/service supervisor start
   volumes:
-    - backup:/backup
+    - git:/home/gerrit/gerrit/git
     - log/supervisor:/var/log/supervisor
     - log/gerrit:/home/gerrit/gerrit/logs
   ports:

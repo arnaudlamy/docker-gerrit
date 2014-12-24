@@ -7,7 +7,7 @@ Plugged on postgresql with logs and backup ready.
 
     $ mkdir -p log/gerrit
     $ mkdir -p log/supervisor
-    $ mkdir -p backup
+    $ mkdir -p git
     $ sudo pip install fig
     $ fig build
     $ fig run gerrit java -jar /home/gerrit/gerrit.war init -d /home/gerrit/gerrit
